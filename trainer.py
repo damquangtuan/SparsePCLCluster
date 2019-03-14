@@ -156,99 +156,167 @@ flags.DEFINE_string('file_to_save', '', 'The file to save the rewards')
 class Trainer(object):
   """Coordinates single or multi-replica training."""
 
-  def __init__(self):
+  def __init__(
+          self,
+          batch_size=100,
+          replay_batch_size=None,
+          num_samples=1,
+          env='Copy-v0',
+          max_step=200,
+          cutoff_agent=0,
+          num_steps=100000,
+          validation_frequency=100,
+          target_network_lag=0.95,
+          sample_from='online',
+          critic_weight=0.1,
+          objective='pcl',
+          tsallis=False,
+          trust_region_p=False,
+          value_opt=None,
+          max_divergence=0.01,
+          learning_rate=0.01,
+          clip_norm=5.0,
+          clip_adv=0.0,
+          tau=0.1,
+          tau_decay=None,
+          tau_start=0.1,
+          eps_lambda=0.0,
+          update_eps_lambda=False,
+          gamma=1.0,
+          rollout=10,
+          q=2.0,
+          k=1.0,
+          use_target_values=False,
+          fixed_std=True,
+          input_prev_actions=True,
+          recurrent=True,
+          input_time_step=False,
+          use_online_batch=True,
+          batch_by_steps=False,
+          unify_episodes=False,
+          replay_buffer_size=10000,
+          replay_buffer_alpha=0.5,
+          replay_buffer_freq=0,
+          eviction='rand',
+          prioritize_by='reward',
+          num_expert_paths=0,
+          internal_dim=128,
+          value_hidden_layers=0,
+          tf_seed=42,
+          save_trajectories_dir=None,
+          load_trajectories_file=None,
+          supervisor=False,
+          task_id=0,
+          ps_tasks=0,
+          num_replicas=1,
+          master='local',
+          save_dir='',
+          load_path='',
+          file_to_save=''
+  ):
 
-    self.file_to_save = FLAGS.file_to_save
-    self.batch_size = FLAGS.batch_size
-    self.replay_batch_size = FLAGS.replay_batch_size
+    self.file_to_save = file_to_save
+    self.batch_size = batch_size
+    self.replay_batch_size = replay_batch_size
     if self.replay_batch_size is None:
       self.replay_batch_size = self.batch_size
-    self.num_samples = FLAGS.num_samples
+    self.num_samples = num_samples
 
-    self.env_str = FLAGS.env
+    self.env_str = env
     self.env = gym_wrapper.GymWrapper(self.env_str,
-                                      distinct=FLAGS.batch_size // self.num_samples,
+                                      distinct=batch_size // self.num_samples,
                                       count=self.num_samples)
     self.eval_env = gym_wrapper.GymWrapper(
         self.env_str,
-        distinct=FLAGS.batch_size // self.num_samples,
+        distinct=batch_size // self.num_samples,
         count=self.num_samples)
     self.env_spec = env_spec.EnvSpec(self.env.get_one())
 
-    self.max_step = FLAGS.max_step
-    self.cutoff_agent = FLAGS.cutoff_agent
-    self.num_steps = FLAGS.num_steps
-    self.validation_frequency = FLAGS.validation_frequency
+    self.max_step = max_step
+    self.cutoff_agent = cutoff_agent
+    self.num_steps = num_steps
+    self.validation_frequency = validation_frequency
 
-    self.target_network_lag = FLAGS.target_network_lag
-    self.sample_from = FLAGS.sample_from
+    self.target_network_lag = target_network_lag
+    self.sample_from = sample_from
     assert self.sample_from in ['online', 'target']
 
-    self.critic_weight = FLAGS.critic_weight
-    self.objective = FLAGS.objective
+    self.critic_weight = critic_weight
+    self.objective = objective
 
-    self.tsallis = FLAGS.tsallis
+    self.tsallis = tsallis
 
-    self.trust_region_p = FLAGS.trust_region_p
-    self.value_opt = FLAGS.value_opt
+    self.trust_region_p = trust_region_p
+    self.value_opt = value_opt
     assert not self.trust_region_p or self.objective in ['pcl', 'trpo']
     assert self.objective != 'trpo' or self.trust_region_p
     assert self.value_opt is None or self.value_opt == 'None' or \
         self.critic_weight == 0.0
-    self.max_divergence = FLAGS.max_divergence
+    self.max_divergence = max_divergence
 
-    self.learning_rate = FLAGS.learning_rate
-    self.clip_norm = FLAGS.clip_norm
-    self.clip_adv = FLAGS.clip_adv
-    self.tau = FLAGS.tau
-    self.tau_decay = FLAGS.tau_decay
-    self.tau_start = FLAGS.tau_start
-    self.eps_lambda = FLAGS.eps_lambda
-    self.update_eps_lambda = FLAGS.update_eps_lambda
-    self.gamma = FLAGS.gamma
-    self.rollout = FLAGS.rollout
+    self.learning_rate = learning_rate
+    self.clip_norm = clip_norm
+    self.clip_adv = clip_adv
+    self.tau = tau
+    self.tau_decay = tau_decay
+    self.tau_start = tau_start
+    self.eps_lambda = eps_lambda
+    self.update_eps_lambda = update_eps_lambda
+    self.gamma = gamma
+    self.rollout = rollout
 
-    self.q = FLAGS.q
-    self.k = FLAGS.k
+    self.q = q
+    self.k = k
 
-    self.use_target_values = FLAGS.use_target_values
-    self.fixed_std = FLAGS.fixed_std
-    self.input_prev_actions = FLAGS.input_prev_actions
-    self.recurrent = FLAGS.recurrent
+    self.use_target_values = use_target_values
+    self.fixed_std = fixed_std
+    self.input_prev_actions = input_prev_actions
+    self.recurrent = recurrent
     assert not self.trust_region_p or not self.recurrent
-    self.input_time_step = FLAGS.input_time_step
+    self.input_time_step = input_time_step
     assert not self.input_time_step or (self.cutoff_agent <= self.max_step)
 
-    self.use_online_batch = FLAGS.use_online_batch
-    self.batch_by_steps = FLAGS.batch_by_steps
-    self.unify_episodes = FLAGS.unify_episodes
+    self.use_online_batch = use_online_batch
+    self.batch_by_steps = batch_by_steps
+    self.unify_episodes = unify_episodes
     if self.unify_episodes:
       assert self.batch_size == 1
 
-    self.replay_buffer_size = FLAGS.replay_buffer_size
-    self.replay_buffer_alpha = FLAGS.replay_buffer_alpha
-    self.replay_buffer_freq = FLAGS.replay_buffer_freq
+    self.replay_buffer_size = replay_buffer_size
+    self.replay_buffer_alpha = replay_buffer_alpha
+    self.replay_buffer_freq = replay_buffer_freq
     assert self.replay_buffer_freq in [-1, 0, 1]
-    self.eviction = FLAGS.eviction
-    self.prioritize_by = FLAGS.prioritize_by
+    self.eviction = eviction
+    self.prioritize_by = prioritize_by
     assert self.prioritize_by in ['rewards', 'step']
-    self.num_expert_paths = FLAGS.num_expert_paths
+    self.num_expert_paths = num_expert_paths
 
-    self.internal_dim = FLAGS.internal_dim
-    self.value_hidden_layers = FLAGS.value_hidden_layers
-    self.tf_seed = FLAGS.tf_seed
+    self.internal_dim = internal_dim
+    self.value_hidden_layers = value_hidden_layers
+    self.tf_seed = tf_seed
 
-    self.save_trajectories_dir = FLAGS.save_trajectories_dir
+    self.save_trajectories_dir = save_trajectories_dir
     self.save_trajectories_file = (
         os.path.join(
             self.save_trajectories_dir, self.env_str.replace('-', '_'))
         if self.save_trajectories_dir else None)
-    self.load_trajectories_file = FLAGS.load_trajectories_file
+    self.load_trajectories_file = load_trajectories_file
+
+    self.supervisor = supervisor,
+    self.task_id = task_id,
+    self.ps_tasks = ps_tasks,
+    self.num_replicas = num_replicas,
+    self.master = master,
+    self.save_dir = save_dir,
+    self.load_path = load_path,
 
     self.hparams = dict((attr, getattr(self, attr))
                         for attr in dir(self)
                         if not attr.startswith('__') and
                         not callable(getattr(self, attr)))
+
+  def set_file_to_save(self, file_to_save=None):
+      self.file_to_save = file_to_save
 
   def hparams_string(self):
     return '\n'.join('%s: %s' % item for item in sorted(self.hparams.items()))
@@ -382,25 +450,25 @@ class Trainer(object):
 
   def run(self):
     """Run training."""
-    is_chief = FLAGS.task_id == 0 or not FLAGS.supervisor
+    is_chief = self.task_id == 0 or not self.supervisor
     sv = None
 
     def init_fn(sess, saver):
       ckpt = None
-      if FLAGS.save_dir and sv is None:
-        load_dir = FLAGS.save_dir
+      if self.save_dir and sv is None:
+        load_dir = self.save_dir
         ckpt = tf.train.get_checkpoint_state(load_dir)
       if ckpt and ckpt.model_checkpoint_path:
         logging.info('restoring from %s', ckpt.model_checkpoint_path)
         saver.restore(sess, ckpt.model_checkpoint_path)
-      elif FLAGS.load_path:
-        logging.info('restoring from %s', FLAGS.load_path)
-        saver.restore(sess, FLAGS.load_path)
+      elif self.load_path:
+        logging.info('restoring from %s', self.load_path)
+        saver.restore(sess, self.load_path)
 
-    if FLAGS.supervisor:
-      with tf.device(tf.ReplicaDeviceSetter(FLAGS.ps_tasks, merge_devices=True)):
+    if self.supervisor:
+      with tf.device(tf.ReplicaDeviceSetter(self.ps_tasks, merge_devices=True)):
         self.global_step = tf.contrib.framework.get_or_create_global_step()
-        tf.set_random_seed(FLAGS.tf_seed)
+        tf.set_random_seed(self.tf_seed)
         self.controller = self.get_controller(self.env)
         self.model = self.controller.model
         self.controller.setup()
@@ -410,7 +478,7 @@ class Trainer(object):
 
         saver = tf.train.Saver(max_to_keep=10)
         step = self.model.global_step
-        sv = tf.Supervisor(logdir=FLAGS.save_dir,
+        sv = tf.Supervisor(logdir=self.save_dir,
                            is_chief=is_chief,
                            saver=saver,
                            save_model_secs=600,
@@ -418,9 +486,9 @@ class Trainer(object):
                            save_summaries_secs=60,
                            global_step=step,
                            init_fn=lambda sess: init_fn(sess, saver))
-        sess = sv.PrepareSession(FLAGS.master)
+        sess = sv.PrepareSession(self.master)
     else:
-      tf.set_random_seed(FLAGS.tf_seed)
+      tf.set_random_seed(self.tf_seed)
       self.global_step = tf.train.get_or_create_global_step()
       self.controller = self.get_controller(self.env)
       self.model = self.controller.model
@@ -517,5 +585,5 @@ def save_data(reward_epi, filename):
         for line in mat:
             np.savetxt(f, line, fmt='%f')
 
-if __name__ == '__main__':
-  app.run()
+# if __name__ == '__main__':
+#   app.run()

@@ -2,11 +2,154 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9d17efa-16af-4e14-b231-9751714c45d1" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/objective.py" beforeDir="false" afterPath="$PROJECT_DIR$/objective.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallis.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallis/drive-download-20181004T164143Z-001.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallis/drive-download-20181004T164143Z-001/generaltsallis_1000_0005_DuplicatedInput1_40.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallis/drive-download-20181004T164143Z-001/generaltsallis_1000_0005_DuplicatedInput2_40.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallis/drive-download-20181004T164143Z-001/generaltsallis_1000_0005_DuplicatedInput3_40.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallis/drive-download-20181004T164143Z-001/generaltsallis_1000_0005_DuplicatedInput4_40.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallis/generaltsallis_10000_00005_Copy1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallis/generaltsallis_1000_0003_Copy.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallis/generaltsallis_1000_0004_20_copy1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallis/generaltsallis_1000_0004_20_copy2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallis/generaltsallis_1000_0004_20_copy3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallis/generaltsallis_1000_0004_20_copy4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallis/generaltsallis_1000_0004_20_copy5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallis/generaltsallis_1000_0005_copy1_40.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallis/generaltsallis_1000_0005_copy2_40.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallis/generaltsallis_1000_0005_copy3_40.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallis/generaltsallis_1000_0005_copy4_40.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallis/generaltsallis_1000_0005_copy5_40.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallis/generaltsallis_5000_00085_Copy1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallis/generaltsallis_5000_00085_Copy2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallis/generaltsallis_5000_00085_Copy3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallis/generaltsallis_5000_00085_Copy4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallis/generaltsallis_5000_00085_Copy5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/drive-download-20181007T013923Z-001.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_10000_00005_20_copy1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_10000_00005_20_copy2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_10000_00005_20_copy3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_10000_00005_20_copy4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_10000_00005_20_copy5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_1000_0003_DuplicatedInput1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_1000_0003_DuplicatedInput1_40.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_1000_0003_DuplicatedInput2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_1000_0003_DuplicatedInput2_40.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_1000_0003_DuplicatedInput3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_1000_0003_DuplicatedInput3_40.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_1000_0003_DuplicatedInput4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_1000_0003_DuplicatedInput4_40.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_1000_0003_DuplicatedInput5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_1000_0003_DuplicatedInput5_40.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_1000_0003_RepeatCopy1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_1000_0003_RepeatCopy1_40.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_1000_0003_RepeatCopy2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_1000_0003_RepeatCopy2_40.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_1000_0003_RepeatCopy3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_1000_0003_RepeatCopy3_40.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_1000_0003_RepeatCopy4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_1000_0003_RepeatCopy5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_1000_0003_Reverse1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_1000_0003_Reverse2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_1000_0003_Reverse3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_1000_0003_Reverse4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_1000_0003_Reverse5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_1000_0003_copy1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_1000_0003_copy1_40.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_1000_0003_copy2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_1000_0003_copy2_40.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_1000_0003_copy3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_1000_0003_copy3_40.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_1000_0003_copy4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_1000_0003_copy4_40.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_1000_0003_copy5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_1000_0003_copy5_40.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_2_85_DuplicatedInput1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_2_85_DuplicatedInput2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_2_85_DuplicatedInput3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_2_85_DuplicatedInput4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_2_85_DuplicatedInput5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_2_85_RepeatCopy1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_2_85_RepeatCopy2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_2_85_RepeatCopy3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_2_85_RepeatCopy4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_2_85_RepeatCopy5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_2_85_Reverse1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_2_85_Reverse2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_2_85_Reverse3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_2_85_Reverse4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_2_85_Reverse5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_2_85_copy1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_2_85_copy2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_2_85_copy3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_2_85_copy4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_2_85_copy5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_5000_00085_copy1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_5000_00085_copy2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_5000_00085_copy3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_5000_00085_copy4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_5000_00085_copy5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_5000_00085_copya5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/Generaltsallisv2_1000_0003_Copy_20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/Generaltsallisv2_1000_0003_DuplicatedInput_20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/Generaltsallisv2_2_85_Copy_20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/Tsallis.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/Tsallis/tsallis_2_5_DuplicatedInput1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/Tsallis/tsallis_2_5_DuplicatedInput2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/Tsallis/tsallis_2_5_DuplicatedInput3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/Tsallis/tsallis_2_5_DuplicatedInput4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/Tsallis/tsallis_2_5_DuplicatedInput5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/Tsallis/tsallis_2_5_RepeatCopy1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/Tsallis/tsallis_2_5_RepeatCopy2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/Tsallis/tsallis_2_5_RepeatCopy3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/Tsallis/tsallis_2_5_RepeatCopy4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/Tsallis/tsallis_2_5_RepeatCopy5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/Tsallis/tsallis_2_5_Reverse1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/Tsallis/tsallis_2_5_Reverse2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/Tsallis/tsallis_2_5_Reverse3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/Tsallis/tsallis_2_5_Reverse4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/Tsallis/tsallis_2_5_Reverse5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/Tsallis/tsallis_2_5_copy1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/Tsallis/tsallis_2_5_copy2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/Tsallis/tsallis_2_5_copy3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/Tsallis/tsallis_2_5_copy4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/Tsallis/tsallis_2_5_copy5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/pcl.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/pcl/pcl_DuplicatedInput1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/pcl/pcl_DuplicatedInput2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/pcl/pcl_DuplicatedInput3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/pcl/pcl_DuplicatedInput4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/pcl/pcl_DuplicatedInput5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/pcl/pcl_RepeatCopy1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/pcl/pcl_RepeatCopy2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/pcl/pcl_RepeatCopy3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/pcl/pcl_RepeatCopy4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/pcl/pcl_RepeatCopy5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/pcl/pcl_Reverse1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/pcl/pcl_Reverse2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/pcl/pcl_Reverse3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/pcl/pcl_Reverse4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/pcl/pcl_Reverse5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/pcl/pcl_copy1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/pcl/pcl_copy2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/pcl/pcl_copy3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/pcl/pcl_copy4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/pcl/pcl_copy5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cluster_work.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/generaltsallisv2_q_2_tau_0.08_learning_rate_0.01.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hyper_para.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_experiment.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plotting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/SparsePCL.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SparsePCL.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trainer.py" beforeDir="false" afterPath="$PROJECT_DIR$/trainer.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,140 +157,131 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="policy.py" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/policy.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="360" lean-forward="true" selection-start-line="360" selection-end-line="360" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="env_spec.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/env_spec.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1365">
-              <caret line="96" column="6" selection-start-line="96" selection-start-column="6" selection-end-line="96" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="objective.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/objective.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="413" lean-forward="true" selection-start-line="413" selection-end-line="413" />
+            <state relative-caret-position="115">
+              <caret line="75" column="23" lean-forward="true" selection-start-line="75" selection-start-column="23" selection-end-line="75" selection-end-column="23" />
               <folding>
-                <element signature="e#822#845#0" expanded="true" />
-                <element signature="e#4064#7424#0" />
-                <element signature="e#7453#11806#0" />
-                <element signature="e#11836#14259#0" />
+                <element signature="e#852#883#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="math_ops.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../GradientDescent/venv/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="1377" column="29" lean-forward="true" selection-start-line="1377" selection-start-column="29" selection-end-line="1377" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="array_ops.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../GradientDescent/venv/lib/python3.6/site-packages/tensorflow/python/ops/array_ops.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-492">
-              <caret line="2360" column="4" selection-start-line="2360" selection-start-column="4" selection-end-line="2360" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="model.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="189" column="12" lean-forward="true" selection-start-line="189" selection-start-column="12" selection-end-line="189" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="controller.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3645">
-              <caret line="251" column="17" selection-start-line="251" selection-start-column="17" selection-end-line="251" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="baseline.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/baseline.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1320">
-              <caret line="90" column="62" selection-start-line="90" selection-start-column="62" selection-end-line="90" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="trainer.py" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/trainer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3549">
-              <caret line="32" column="13" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="13" />
+            <state relative-caret-position="463">
+              <caret line="320" column="27" lean-forward="true" selection-start-line="320" selection-start-column="27" selection-end-line="320" selection-end-column="27" />
+              <folding>
+                <element signature="e#860#891#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="319">
-                <caret line="61" selection-start-line="57" selection-end-line="61" />
+              <first_editor relative-caret-position="135">
+                <caret line="69" column="20" selection-start-line="66" selection-end-line="69" selection-end-column="20" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hyper_para.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="26" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/learn_experiment.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="407">
+              <caret line="43" column="42" lean-forward="true" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
+              <folding>
+                <element signature="e#0#36#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="20" column="3" lean-forward="true" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ExperimentScript/run_generalTsallisv2_q_2.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="252" selection-start-line="23" selection-start-column="240" selection-end-line="23" selection-end-column="252" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>logit</find>
-      <find>sample_action(</find>
-      <find>.logits</find>
-      <find>session</find>
-      <find>logits</find>
-      <find>setup</find>
-      <find>state_is_tuple</find>
-      <find>get_model</find>
-      <find>get_ob</find>
-      <find>sample_ac</find>
-      <find>calculate_kl</find>
-      <find>batch</find>
-      <find>get_initializer(</find>
-      <find>sample_</find>
-      <find>time_length</find>
-      <find>time_len</find>
-      <find>reshape_batched_inputs</find>
+      <find>self_kl</find>
       <find>get_po</find>
-      <find>prob</find>
-      <find>print</find>
-      <find>get_values(</find>
-      <find>self.actions</find>
-      <find>log_pro</find>
+      <find>self.q</find>
+      <find>tsalli</find>
       <find>sample_actions</find>
-      <find>single_step</find>
-      <find>multi</find>
+      <find>Tsall</find>
+      <find>sample_action(</find>
+      <find>multi_s</find>
+      <find>tsall</find>
+      <find>core(</find>
+      <find>logits</find>
+      <find>generaltsallisv2</find>
+      <find>generaltsallisv2_2_85</find>
+      <find>--file_to_save='</find>
+      <find>sample_actions(</find>
+      <find>self.objective</find>
       <find>tsallis</find>
-      <find>object</find>
-      <find>self.rollout - 1, batch_size</find>
-      <find>multi_step</find>
+      <find>1000_0003_copy_DuplicatedInput</find>
+      <find>--tau=0.005</find>
+      <find>replay</find>
+      <find>tau *</find>
+      <find>tau</find>
+      <find>MLPPolicy</find>
+      <find>num_samples</find>
+      <find>log_prob_action</find>
+      <find>file_to_save</find>
+      <find>repla</find>
+      <find>observations</find>
+      <find>feed</find>
+      <find>FLAGS.</find>
     </findStrings>
+    <replaceStrings>
+      <replace>tf.float64</replace>
+      <replace>generaltsallisv2_2_85_</replace>
+      <replace>--file_to_save='drive/My Drive/SparsePCL/</replace>
+      <replace>1000_0003_DuplicatedInput</replace>
+      <replace>--tau=0.05</replace>
+      <replace>self.</replace>
+    </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
     </dirStrings>
@@ -159,20 +293,40 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/baseline.py" />
-        <option value="$PROJECT_DIR$/trainer.py" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/policy.py" />
+        <option value="$PROJECT_DIR$/gym-master/gym/envs/algorithmic/duplicated_input.py" />
+        <option value="$PROJECT_DIR$/gym_master/gym/envs/algorithmic/duplicated_input.py" />
+        <option value="$PROJECT_DIR$/trust_region.py" />
+        <option value="$PROJECT_DIR$/optimizers.py" />
         <option value="$PROJECT_DIR$/model.py" />
+        <option value="$PROJECT_DIR$/run_experiment.sh" />
+        <option value="$PROJECT_DIR$/run_experiment_pcl_v2_q2_k085.sh" />
+        <option value="$PROJECT_DIR$/run_experiment_pcl_v2_q2_k085_1.sh" />
+        <option value="$PROJECT_DIR$/gym/envs/algorithmic/reversed_addition.py" />
+        <option value="$PROJECT_DIR$/gym/envs/algorithmic/reverse.py" />
+        <option value="$PROJECT_DIR$/gym/envs/algorithmic/repeat_copy.py" />
+        <option value="$PROJECT_DIR$/run_experiment_generalTsallis_v1_copy.sh" />
+        <option value="$PROJECT_DIR$/plotting.py" />
+        <option value="$PROJECT_DIR$/gym/envs/algorithmic/duplicated_input.py" />
+        <option value="$PROJECT_DIR$/generaltsallisv2_Copy_80.sh" />
+        <option value="$PROJECT_DIR$/gym_wrapper.py" />
         <option value="$PROJECT_DIR$/objective.py" />
+        <option value="$PROJECT_DIR$/gym/envs/algorithmic/copy_.py" />
+        <option value="$PROJECT_DIR$/policy.py" />
+        <option value="$PROJECT_DIR$/ExperimentScript/run_template_all_generalTsallisv2.sh" />
+        <option value="$PROJECT_DIR$/ExperimentScript/run_generalTsallisv2_q_2.sh" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/hyper_para.yml" />
+        <option value="$PROJECT_DIR$/trainer.py" />
+        <option value="$PROJECT_DIR$/learn_experiment.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="202" />
-    <option name="y" value="118" />
+    <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="827" />
+    <option name="height" value="831" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -182,8 +336,18 @@
         <subPane>
           <expand>
             <path>
-              <item name="SparsePCL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SparsePCL" type="462c0819:PsiDirectoryNode" />
+              <item name="SparsePCLCluster" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SparsePCLCluster" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SparsePCLCluster" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SparsePCLCluster" type="462c0819:PsiDirectoryNode" />
+              <item name="cluster_work" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SparsePCLCluster" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SparsePCLCluster" type="462c0819:PsiDirectoryNode" />
+              <item name="ExperimentScript" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -193,8 +357,9 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="terminal" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -202,6 +367,18 @@
         <option name="myUseModuleSdk" value="true" />
       </console-settings>
     </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Results/Tsallis" />
+      <recent name="$PROJECT_DIR$/Results/pcl" />
+      <recent name="$PROJECT_DIR$/Results/GeneralTsallisV2" />
+      <recent name="$PROJECT_DIR$/Results/GeneralTsallis" />
+      <recent name="$PROJECT_DIR$/ExperimentScript" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -215,6 +392,30 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="SparsePCL" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/tensorflow2/bin/python" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -225,423 +426,451 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1532479148339</updated>
+      <workItem from="1551208035796" duration="28453000" />
+      <workItem from="1551449125428" duration="5639000" />
+      <workItem from="1552487092073" duration="7706000" />
     </task>
+    <task id="LOCAL-00001" summary="-implement general Tsallis Entropy v1 and v2">
+      <created>1550743425404</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1550743425405</updated>
+    </task>
+    <task id="LOCAL-00002" summary="-add gym">
+      <created>1550757450332</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1550757450333</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Objective function for General Tsallis v2 and Weight Initialization of LSTM Policy Network">
+      <created>1551449248416</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1551449248416</updated>
+    </task>
+    <task id="LOCAL-00004" summary="added script to run in cluster">
+      <created>1551453963119</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1551453963119</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add files to repo">
+      <created>1552487474059</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1552487474059</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="41798000" />
+  </component>
   <component name="ToolWindowManager">
-    <frame x="202" y="118" width="1440" height="827" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="831" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5564516" visible="true" weight="0.14520743" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="R Packages" order="4" weight="0.3297568" />
-      <window_info anchor="right" id="R Graphics" order="3" weight="0.3297568" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" visible="true" weight="0.15068494" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Python Console" order="9" weight="0.32876712" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" id="Structure" order="1" sideWeight="0.44354838" side_tool="true" visible="true" weight="0.14520743" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.552" visible="true" weight="0.1981402" />
+      <window_info id="Structure" order="1" sideWeight="0.448" side_tool="true" weight="0.15164521" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.19350474" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32882273" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Python Console" order="9" weight="0.19756427" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.14965986" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="R Graphics" order="3" weight="0.3297568" />
+      <window_info anchor="right" id="R Packages" order="4" weight="0.3297568" />
+      <window_info anchor="right" id="SciView" order="5" />
+      <window_info anchor="right" x="0" y="0" width="310" height="631" id="Documentation" order="6" side_tool="true" visible="true" weight="0.16094421" />
+      <window_info anchor="right" id="Database" order="7" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.552" visible="true" weight="0.15164521" />
+      <window_info id="Structure" order="1" sideWeight="0.448" side_tool="true" visible="true" weight="0.15164521" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Python Console" order="9" weight="0.32876712" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" visible="true" weight="0.14965986" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="R Graphics" order="3" weight="0.3297568" />
+      <window_info anchor="right" id="R Packages" order="4" weight="0.3297568" />
+    </layout-to-restore>
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="4" />
-    </breakpoint-manager>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="-implement general Tsallis Entropy v1 and v2" />
+    <MESSAGE value="-add gym" />
+    <MESSAGE value="Objective function for General Tsallis v2 and Weight Initialization of LSTM Policy Network" />
+    <MESSAGE value="added script to run in cluster" />
+    <MESSAGE value="add files to repo" />
+    <option name="LAST_COMMIT_MESSAGE" value="add files to repo" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/policy.py">
+    <entry file="file://$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_1000_0003_RepeatCopy4.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4320">
-          <caret line="289" column="37" selection-start-line="289" selection-start-column="37" selection-end-line="289" selection-end-column="37" />
+        <state relative-caret-position="-15499" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_1000_0003_RepeatCopy1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3369" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_1000_0003_RepeatCopy2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15499" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_1000_0003_RepeatCopy3.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9074" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_1000_0003_RepeatCopy5.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15499" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExperimentScript/run_experiment_pcl_v2_q2_k085.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="102" selection-start-line="102" selection-end-line="102" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/env_spec.py">
+    <entry file="file://$PROJECT_DIR$/ExperimentScript/run_experiment_pcl_v2_q2_k085_1.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1365">
-          <caret line="96" column="6" selection-start-line="96" selection-start-column="6" selection-end-line="96" selection-end-column="6" />
+        <state relative-caret-position="174">
+          <caret line="157" column="281" selection-start-line="157" selection-start-column="281" selection-end-line="157" selection-end-column="281" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model.py">
+    <entry file="file://$PROJECT_DIR$/gym/envs/algorithmic/reversed_addition.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1995">
-          <caret line="137" column="47" selection-start-line="137" selection-start-column="35" selection-end-line="137" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trust_region.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2295">
-          <caret line="159" column="20" selection-start-line="159" selection-start-column="20" selection-end-line="159" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3645">
-          <caret line="251" column="17" selection-start-line="251" selection-start-column="17" selection-end-line="251" selection-end-column="17" />
+        <state relative-caret-position="255">
+          <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/baseline.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="90" column="62" selection-start-line="90" selection-start-column="62" selection-end-line="90" selection-end-column="62" />
+        <state relative-caret-position="3030">
+          <caret line="202" column="55" selection-start-line="202" selection-start-column="55" selection-end-line="202" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trainer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6390">
-          <caret line="444" column="65" selection-start-line="444" selection-start-column="65" selection-end-line="444" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="780">
-            <caret line="52" column="3" selection-start-line="52" selection-start-column="3" selection-end-line="52" selection-end-column="3" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/objective.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4635">
-          <caret line="395" column="26" lean-forward="true" selection-start-line="395" selection-start-column="26" selection-end-line="395" selection-end-column="26" />
-          <folding>
-            <element signature="e#822#845#0" expanded="true" />
-            <element signature="e#4064#7424#0" />
-            <element signature="e#7453#11806#0" />
-            <element signature="e#11836#14259#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/policy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3180">
-          <caret line="212" column="18" lean-forward="true" selection-start-line="212" selection-start-column="18" selection-end-line="212" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/env_spec.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1440">
-          <caret line="96" column="6" selection-start-line="96" selection-start-column="6" selection-end-line="96" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/objective.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4890">
-          <caret line="412" column="12" lean-forward="true" selection-start-line="412" selection-start-column="12" selection-end-line="412" selection-end-column="12" />
-          <folding>
-            <element signature="e#822#845#0" expanded="true" />
-            <element signature="e#4064#7424#0" />
-            <element signature="e#7453#11806#0" />
-            <element signature="e#11836#14259#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1995">
-          <caret line="137" column="47" selection-start-line="137" selection-start-column="35" selection-end-line="137" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trust_region.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2295">
-          <caret line="159" column="20" selection-start-line="159" selection-start-column="20" selection-end-line="159" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3645">
-          <caret line="251" column="17" lean-forward="true" selection-start-line="251" selection-start-column="17" selection-end-line="251" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baseline.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="90" column="62" selection-start-line="90" selection-start-column="62" selection-end-line="90" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trainer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6390">
-          <caret line="444" column="65" selection-start-line="444" selection-start-column="65" selection-end-line="444" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="780">
-            <caret line="52" column="3" lean-forward="true" selection-start-line="52" selection-start-column="3" selection-end-line="52" selection-end-column="3" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/policy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3525">
-          <caret line="235" column="45" lean-forward="true" selection-start-line="235" selection-start-column="45" selection-end-line="235" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/env_spec.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1365">
-          <caret line="96" column="6" selection-start-line="96" selection-start-column="6" selection-end-line="96" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/objective.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3495">
-          <caret line="235" column="37" lean-forward="true" selection-start-line="235" selection-start-column="37" selection-end-line="235" selection-end-column="37" />
-          <folding>
-            <element signature="e#822#845#0" expanded="true" />
-            <element signature="e#4064#7424#0" />
-            <element signature="e#7453#11806#0" />
-            <element signature="e#11836#14259#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1770">
-          <caret line="122" column="30" lean-forward="true" selection-start-line="122" selection-start-column="30" selection-end-line="122" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trust_region.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2295">
-          <caret line="159" column="20" selection-start-line="159" selection-start-column="20" selection-end-line="159" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3825">
-          <caret line="263" column="36" lean-forward="true" selection-start-line="263" selection-start-column="36" selection-end-line="263" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baseline.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1500">
-          <caret line="102" column="72" selection-start-line="102" selection-start-column="72" selection-end-line="102" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trainer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5970">
-          <caret line="416" column="7" lean-forward="true" selection-start-line="416" selection-start-column="7" selection-end-line="416" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="900">
-            <caret line="60" column="23" selection-start-line="57" selection-end-line="60" selection-end-column="23" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/policy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3135">
-          <caret line="209" column="40" lean-forward="true" selection-start-line="209" selection-start-column="40" selection-end-line="209" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/env_spec.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1365">
-          <caret line="96" column="6" selection-start-line="96" selection-start-column="6" selection-end-line="96" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/objective.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6075">
-          <caret line="407" column="31" selection-start-line="407" selection-start-column="26" selection-end-line="407" selection-end-column="31" />
-          <folding>
-            <element signature="e#822#845#0" expanded="true" />
-            <element signature="e#4064#7424#0" />
-            <element signature="e#7453#11806#0" />
-            <element signature="e#11836#14259#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="54" column="6" selection-start-line="54" selection-start-column="6" selection-end-line="54" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trust_region.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2295">
-          <caret line="159" column="20" lean-forward="true" selection-start-line="159" selection-start-column="20" selection-end-line="159" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller.py">
+    <entry file="file://$PROJECT_DIR$/expert_paths.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/baseline.py">
+    <entry file="file://$PROJECT_DIR$/../GradientDescent/venv/lib/python3.6/site-packages/matplotlib/pyplot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1500">
-          <caret line="102" column="72" lean-forward="true" selection-start-line="102" selection-start-column="72" selection-end-line="102" selection-end-column="72" />
+        <state relative-caret-position="236">
+          <caret line="3345" column="4" selection-start-line="3345" selection-start-column="4" selection-end-line="3345" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trainer.py">
+    <entry file="file://$PROJECT_DIR$/generaltsallis_5000_00085_Copy3.txt" />
+    <entry file="file://$PROJECT_DIR$/generaltsallis_5000_00085_Copy1.txt" />
+    <entry file="file://$PROJECT_DIR$/generaltsallis_5000_00085_Copy2.txt" />
+    <entry file="file://$PROJECT_DIR$/Results/GeneralTsallis/generaltsallis_10000_00005_Copy1.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Results/GeneralTsallis/generaltsallis_1000_0003_Copy.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generaltsallisv2_5000_00085_copy4.txt" />
+    <entry file="file://$PROJECT_DIR$/generaltsallisv2_Copy_80.sh" />
+    <entry file="file://$PROJECT_DIR$/gym/envs/algorithmic/repeat_copy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6690">
-          <caret line="464" lean-forward="true" selection-start-line="464" selection-end-line="464" />
+        <state relative-caret-position="225">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="900">
-            <caret line="60" column="23" lean-forward="true" selection-start-line="57" selection-end-line="60" selection-end-column="23" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_2_85_Reverse2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4490" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Results/GeneralTsallisV2/generaltsallisv2_2_85_Reverse1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-13052" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExperimentScript/run_experiment_generalTsallis_v1_copy.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="310" selection-start-line="27" selection-start-column="310" selection-end-line="27" selection-end-column="310" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trust_region.py">
+    <entry file="file://$PROJECT_DIR$/../GradientDescent/venv/lib/python3.6/site-packages/tensorflow/python/platform/flags.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2295">
-          <caret line="159" column="20" selection-start-line="159" selection-start-column="20" selection-end-line="159" selection-end-column="20" />
+        <state relative-caret-position="421">
+          <caret line="121" selection-start-line="121" selection-end-line="121" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../GradientDescent/venv/lib/python3.6/site-packages/tensorflow/python/ops/gen_array_ops.py">
+    <entry file="file://$PROJECT_DIR$/gym/envs/algorithmic/algorithmic_env.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="2861" column="20" selection-start-line="2861" selection-start-column="20" selection-end-line="2861" selection-end-column="20" />
+        <state relative-caret-position="975">
+          <caret line="71" column="55" selection-start-line="71" selection-start-column="55" selection-end-line="71" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gym/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExperimentScript/generaltsallisv2_copy_2_65_80.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="15" selection-start-line="8" selection-end-line="8" selection-end-column="333" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gym/envs/algorithmic/duplicated_input.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/env_spec.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1365">
-          <caret line="96" column="6" selection-start-line="96" selection-start-column="6" selection-end-line="96" selection-end-column="6" />
+        <state relative-caret-position="316">
+          <caret line="127" column="20" selection-start-line="127" selection-start-column="20" selection-end-line="127" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2018.1/python_stubs/-1034115686/builtins.py">
+    <entry file="file://$PROJECT_DIR$/Results/Tsallis/tsallis_2_5_Reverse2.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="5394" column="8" selection-start-line="5394" selection-start-column="8" selection-end-line="5394" selection-end-column="8" />
-        </state>
+        <state relative-caret-position="-45044" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/baseline.py">
+    <entry file="file://$PROJECT_DIR$/replay_buffer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="90" column="62" selection-start-line="90" selection-start-column="62" selection-end-line="90" selection-end-column="62" />
+        <state relative-caret-position="330">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="e#749#762#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3645">
-          <caret line="251" column="17" selection-start-line="251" selection-start-column="17" selection-end-line="251" selection-end-column="17" />
+        <state relative-caret-position="227">
+          <caret line="372" column="33" selection-start-line="372" selection-start-column="6" selection-end-line="372" selection-end-column="33" />
+          <folding>
+            <element signature="e#749#787#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../GradientDescent/venv/lib/python3.6/site-packages/tensorflow/python/ops/array_ops.py">
+    <entry file="file://$PROJECT_DIR$/1" />
+    <entry file="file://$PROJECT_DIR$/gym/envs/algorithmic/copy_.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-492">
-          <caret line="2360" column="4" selection-start-line="2360" selection-start-column="4" selection-end-line="2360" selection-end-column="4" />
+        <state relative-caret-position="195">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generaltsallisv2_q_2_tau_0.08_learning_rate_0.01.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExperimentScript/run_template_all_generalTsallisv2.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="32" column="61" lean-forward="true" selection-start-line="32" selection-start-column="61" selection-end-line="32" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gym_wrapper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="e#794#812#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gym/envs/algorithmic/reverse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/objective.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5580">
+          <caret line="696" column="41" selection-start-line="696" selection-start-column="41" selection-end-line="696" selection-end-column="41" />
+          <folding>
+            <element signature="e#904#1892#0" />
+            <element signature="e#2436#2948#0" />
+            <element signature="e#3016#3451#0" />
+            <element signature="e#4064#7466#0" />
+            <element signature="e#11878#14301#0" />
+            <element signature="e#19138#24073#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/optimizers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2145">
+          <caret line="150" selection-start-line="150" selection-end-line="150" />
+          <folding>
+            <element signature="e#799#837#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trust_region.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1590">
+          <caret line="112" column="41" selection-start-line="112" selection-start-column="41" selection-end-line="112" selection-end-column="41" />
+          <folding>
+            <element signature="e#821#859#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cluster_work/LICENSE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/policy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="75" column="23" lean-forward="true" selection-start-line="75" selection-start-column="23" selection-end-line="75" selection-end-column="23" />
+          <folding>
+            <element signature="e#852#883#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cluster_work.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="38" lean-forward="true" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
+          <folding>
+            <element signature="e#401#411#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plotting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1276">
+          <caret line="117" column="10" lean-forward="true" selection-start-line="117" selection-start-column="10" selection-end-line="117" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+            <marker date="1538892532349" expanded="true" signature="932:1881" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExperimentScript/run_generalTsallisv2_q_2.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="252" selection-start-line="23" selection-start-column="240" selection-end-line="23" selection-end-column="252" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cluster_work/cluster_work.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="20" column="3" lean-forward="true" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="319">
-            <caret line="61" selection-start-line="57" selection-end-line="61" />
+          <first_editor relative-caret-position="135">
+            <caret line="69" column="20" selection-start-line="66" selection-end-line="69" selection-end-column="20" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../GradientDescent/venv/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py">
+    <entry file="file://$PROJECT_DIR$/hyper_para.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="1377" column="29" lean-forward="true" selection-start-line="1377" selection-start-column="29" selection-end-line="1377" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/policy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="360" lean-forward="true" selection-start-line="360" selection-end-line="360" />
+        <state relative-caret-position="330">
+          <caret line="22" column="26" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/trainer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3549">
-          <caret line="32" column="13" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="189" column="12" lean-forward="true" selection-start-line="189" selection-start-column="12" selection-end-line="189" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/objective.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="413" lean-forward="true" selection-start-line="413" selection-end-line="413" />
+        <state relative-caret-position="463">
+          <caret line="320" column="27" lean-forward="true" selection-start-line="320" selection-start-column="27" selection-end-line="320" selection-end-column="27" />
           <folding>
-            <element signature="e#822#845#0" expanded="true" />
-            <element signature="e#4064#7424#0" />
-            <element signature="e#7453#11806#0" />
-            <element signature="e#11836#14259#0" />
+            <element signature="e#860#891#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_experiment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="43" column="42" lean-forward="true" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
           </folding>
         </state>
       </provider>
