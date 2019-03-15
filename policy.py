@@ -23,6 +23,7 @@ from __future__ import division
 
 
 import tensorflow as tf
+import tensorflow_probability as tfp
 import numpy as np
 
 
@@ -81,8 +82,8 @@ class Policy(object):
     """Get RNN cell."""
     self.cell_input_dim = self.internal_dim // 2
     cell = tf.contrib.rnn.LSTMCell(self.cell_input_dim,
-                                  state_is_tuple=False,
-                                  reuse=tf.get_variable_scope().reuse)
+                                   state_is_tuple=False,
+                                   reuse=tf.get_variable_scope().reuse)
     with tf.variable_scope('rnn', initializer=tf.truncated_normal_initializer(stddev=0.01)):
     # with tf.variable_scope('rnn', initializer=tf.constant_initializer(value=0.001)):
       cell = tf.contrib.rnn.OutputProjectionWrapper(
@@ -125,7 +126,8 @@ class Policy(object):
                               initializer=self.matrix_init)
 
           cell_input += tf.matmul(tf.one_hot(act, action_dim), w)
-          prev_action = tf.to_int32(prev_action / action_dim)
+          #prev_action = tf.to_int32(prev_action / action_dim)
+          prev_action = tf.cast(prev_action / action_dim, tf.int32)
       else:
         for i, (act_dim, act_type) in enumerate(self.env_spec.act_dims_and_types):
           w = tf.get_variable('w_prev_action%d' % i, [act_dim, self.cell_input_dim],
@@ -153,7 +155,7 @@ class Policy(object):
 
         # probs = tf.nn.relu(logits - tf.expand_dims(spmax_tau(logits), 1) + self.big_o/((self.q-1)*(self.q-1)))
         probs = tf.nn.relu(logits - tf.expand_dims(spmax_tau(logits), 1))
-        dist = tf.distributions.Categorical(probs=probs)
+        dist = tfp.distributions.Categorical(probs=probs)
         act = dist.sample([])
       else:
         act = tf.reshape(tf.multinomial(logits, 1), [-1])
@@ -276,7 +278,7 @@ class Policy(object):
 
       act_logits = act_logits / (self.k * self.q * self.tau)
 
-      # act_logits = act_logits * 10
+      #act_logits = act_logits * 10
 
       sampled_actions.append(act)
       logits.append(act_logits)

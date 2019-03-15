@@ -124,8 +124,8 @@ class Baseline(object):
 
     time_step = (float(self.input_time_step) *
                  tf.expand_dims(
-                     tf.to_float(tf.range(time_length * batch_size) /
-                                 batch_size), -1))
+                     tf.cast(tf.range(time_length * batch_size) /
+                                 batch_size, tf.float32), -1))
 
     return (time_step, reshaped_obs, reshaped_prev_act,
             reshaped_internal_policy_states,

@@ -42,7 +42,7 @@ import env_spec
 
 app = tf.app
 flags = tf.flags
-logging = tf.logging
+#logging = tf.logging
 gfile = tf.gfile
 
 FLAGS = flags.FLAGS
@@ -158,10 +158,10 @@ class Trainer(object):
 
   def __init__(
           self,
+		  env='Copy-v0',
           batch_size=100,
           replay_batch_size=None,
           num_samples=1,
-          env='Copy-v0',
           max_step=200,
           cutoff_agent=0,
           num_steps=100000,
@@ -198,7 +198,7 @@ class Trainer(object):
           replay_buffer_alpha=0.5,
           replay_buffer_freq=0,
           eviction='rand',
-          prioritize_by='reward',
+          prioritize_by='rewards',
           num_expert_paths=0,
           internal_dim=128,
           value_hidden_layers=0,
@@ -210,12 +210,14 @@ class Trainer(object):
           ps_tasks=0,
           num_replicas=1,
           master='local',
-          save_dir='',
+          save_dir=None,
           load_path='',
-          file_to_save=''
+          file_to_save='',
+		  logging=tf.logging
   ):
 
     self.file_to_save = file_to_save
+    self.env = env
     self.batch_size = batch_size
     self.replay_batch_size = replay_batch_size
     if self.replay_batch_size is None:
@@ -257,7 +259,7 @@ class Trainer(object):
     self.learning_rate = learning_rate
     self.clip_norm = clip_norm
     self.clip_adv = clip_adv
-    self.tau = tau
+    self.tau = float(tau)
     self.tau_decay = tau_decay
     self.tau_start = tau_start
     self.eps_lambda = eps_lambda
@@ -265,8 +267,10 @@ class Trainer(object):
     self.gamma = gamma
     self.rollout = rollout
 
-    self.q = q
-    self.k = k
+    self.q = float(q)
+    self.k = float(k)
+
+    self.logging = logging
 
     self.use_target_values = use_target_values
     self.fixed_std = fixed_std
@@ -451,23 +455,26 @@ class Trainer(object):
   def run(self):
     """Run training."""
     is_chief = self.task_id == 0 or not self.supervisor
+    is_chief = True
     sv = None
 
     def init_fn(sess, saver):
       ckpt = None
-      if self.save_dir and sv is None:
-        load_dir = self.save_dir
-        ckpt = tf.train.get_checkpoint_state(load_dir)
-      if ckpt and ckpt.model_checkpoint_path:
-        logging.info('restoring from %s', ckpt.model_checkpoint_path)
-        saver.restore(sess, ckpt.model_checkpoint_path)
-      elif self.load_path:
-        logging.info('restoring from %s', self.load_path)
-        saver.restore(sess, self.load_path)
+      #if self.save_dir and sv is None:
+      #  load_dir = self.save_dir
+      #  ckpt = tf.train.get_checkpoint_state(load_dir)
+      #if ckpt and ckpt.model_checkpoint_path:
+      #  logging.info('restoring from %s', ckpt.model_checkpoint_path)
+      #  saver.restore(sess, ckpt.model_checkpoint_path)
+      #elif self.load_path:
+      #  logging.info('restoring from %s', self.load_path)
+      #  saver.restore(sess, self.load_path)
 
-    if self.supervisor:
-      with tf.device(tf.ReplicaDeviceSetter(self.ps_tasks, merge_devices=True)):
-        self.global_step = tf.contrib.framework.get_or_create_global_step()
+    tf.reset_default_graph()
+
+    if self.supervisor == True:
+      with tf.device(tf.train.replica_device_setter(self.ps_tasks, merge_devices=True)):
+        self.global_step = tf.train.get_or_create_global_step()
         tf.set_random_seed(self.tf_seed)
         self.controller = self.get_controller(self.env)
         self.model = self.controller.model
@@ -510,11 +517,11 @@ class Trainer(object):
     self.sv = sv
     self.sess = sess
 
-    logging.info('hparams:\n%s', self.hparams_string())
+    self.logging.info('hparams:\n%s', self.hparams_string())
 
     model_step = sess.run(self.model.global_step)
     if model_step >= self.num_steps:
-      logging.info('training has reached final step')
+      self.logging.info('training has reached final step')
       return
 
     losses = []
@@ -527,7 +534,7 @@ class Trainer(object):
     for step in xrange(1 + self.num_steps):
 
       if sv is not None and sv.ShouldStop():
-        logging.info('stopping supervisor')
+        self.logging.info('stopping supervisor')
         break
 
       self.do_before_step(step)
@@ -547,9 +554,9 @@ class Trainer(object):
       model_step = sess.run(self.model.global_step)
 
       reward_epi[step] = np.mean(greedy_episode_rewards)
-
-      if is_chief and step % self.validation_frequency == 0:
-        logging.info('at training step %d, model step %d: '
+      
+      if is_chief==True and step % self.validation_frequency == 0:
+        self.logging.info('at training step %d, model step %d: '
                      'avg loss %f, avg reward %f, '
                      'episode rewards: %f, greedy rewards: %f',
                      step, model_step,
@@ -562,18 +569,19 @@ class Trainer(object):
         all_ep_rewards = []
 
       if model_step >= self.num_steps:
-        logging.info('training has reached final step')
+        self.logging.info('training has reached final step')
         break
 
     if is_chief and sv is not None:
-      logging.info('saving final model to %s', sv.save_path)
+      self.logging.info('saving final model to %s', sv.save_path)
       sv.saver.save(sess, sv.save_path, global_step=sv.global_step)
 
     save_data(reward_epi, self.file_to_save)
-
+ 
+    #self.logging.set_verbosity(logging.INFO)
 
 def main(unused_argv):
-  logging.set_verbosity(logging.INFO)
+  self.logging.set_verbosity(logging.INFO)
   trainer = Trainer()
   trainer.run()
 

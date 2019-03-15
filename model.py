@@ -124,6 +124,7 @@ class Model(object):
 
     self.setup_placeholders()
 
+    
     tf.summary.scalar('avg_episode_reward', self.avg_episode_reward)
     tf.summary.scalar('greedy_episode_reward', self.greedy_episode_reward)
 

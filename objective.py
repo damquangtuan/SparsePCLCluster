@@ -131,10 +131,11 @@ class ActorCritic(Objective):
     self.gamma = gamma
     self.rollout = rollout
     self.clip_adv = clip_adv
-
-    self.eps_lambda = tf.get_variable(  # TODO: need a better way
-        'eps_lambda', [], initializer=tf.constant_initializer(eps_lambda),
-        trainable=False)
+    
+    with tf.variable_scope("eps_lambda", reuse=tf.AUTO_REUSE):
+        self.eps_lambda = tf.get_variable(  # TODO: need a better way
+            'eps_lambda', [], initializer=tf.constant_initializer(eps_lambda),
+            trainable=False)
     self.new_eps_lambda = tf.placeholder(tf.float32, [])
     self.assign_eps_lambda = self.eps_lambda.assign(
         0.99 * self.eps_lambda + 0.01 * self.new_eps_lambda)
