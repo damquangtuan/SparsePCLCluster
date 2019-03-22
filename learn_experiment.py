@@ -1,6 +1,7 @@
 import tensorflow as tf
 from cluster_work import ClusterWork
 from trainer import Trainer
+from pathlib import Path
 
 class MyExperiment(ClusterWork):
     def __init__(self):
@@ -15,11 +16,11 @@ class MyExperiment(ClusterWork):
         :param rep: the repetition counter
         """
 
-        self.file_to_save = '/home/qd34dado/Workspace/SparsePCLCluster/results/Copy-v0_20_q_' + str(config['params']['q'])\
+        self.file_to_save = '/home/qd34dado/Workspace/SparsePCLCluster/results/new/Copy-v0_40_q_' + str(config['params']['q'])\
                         + '_tau_' + str(config['params']['tau']) + '_learning_rate_0.01'
         self.logging = tf.logging
         self.logging.set_verbosity(self.logging.INFO)
-        		
+
         		
         self.trainer_obj = Trainer(
             batch_size=config['params']['batch_size'],
@@ -36,10 +37,18 @@ class MyExperiment(ClusterWork):
             k=config['params']['k'],
             tsallis=True,
             tau=config['params']['tau'],
-			num_steps=2000,
+			num_steps=config['iterations'],
 			logging=self.logging
         )
 
+        self.file_to_save = self.file_to_save + '_' + str(rep) + '.txt'
+        print('file to save: ', self.file_to_save)
+        my_file = Path(self.file_to_save)
+        #if my_file.is_file() == True:
+        #    return {'results': None}
+        self.trainer_obj.set_file_to_save(file_to_save=self.file_to_save)
+
+        self.trainer_obj.run()
 
     def iterate(self, config, rep=0, n=0):
         """
@@ -49,11 +58,6 @@ class MyExperiment(ClusterWork):
         :param rep: the repetition counter
         :param n: the iteration counter
         """
-        file_to_save = self.file_to_save + str(n) + '.txt'
-        print('file to save: ', file_to_save)
-        self.trainer_obj.set_file_to_save(file_to_save=file_to_save)
-
-        self.trainer_obj.run()
         # Return results as a dictionary, for each key there will be one column in a results pandas.DataFrame.
         # The DataFrame will be stored below the path defined in the experiment config.
         return {'results': None}

@@ -1,6 +1,7 @@
 import tensorflow as tf
+import trainer_multiprocess
 from cluster_work import ClusterWork
-from trainer_multiprocess import Trainer
+from trainer_multiprocess import TrainerMulti
 
 class MyExperiment(ClusterWork):
     def __init__(self):
@@ -21,7 +22,7 @@ class MyExperiment(ClusterWork):
         self.logging.set_verbosity(self.logging.INFO)
         		
         		
-        self.trainer_obj = Trainer(
+        self.trainer_obj = TrainerMulti(
             batch_size=config['params']['batch_size'],
 			env='Copy-v0',
             validation_frequency=25,
@@ -49,11 +50,12 @@ class MyExperiment(ClusterWork):
         :param rep: the repetition counter
         :param n: the iteration counter
         """
-        file_to_save = self.file_to_save + str(n) + '.txt'
+        file_to_save = self.file_to_save
         print('file to save: ', file_to_save)
         self.trainer_obj.set_file_to_save(file_to_save=file_to_save)
 
-        self.trainer_obj.run_multiprocess(iteration=n)
+        #trainer_multiprocess.run_multiprocess(self.trainer_obj, iteration=n)
+        self.trainer_obj.run(iteration=n)
         # Return results as a dictionary, for each key there will be one column in a results pandas.DataFrame.
         # The DataFrame will be stored below the path defined in the experiment config.
         return {'results': None}

@@ -58,8 +58,8 @@ class Policy(object):
     self.recurrent = recurrent
     self.input_prev_actions = input_prev_actions
 
-    self.matrix_init = tf.truncated_normal_initializer(stddev=0.01)
-    # self.matrix_init = tf.constant_initializer(value=0.001)
+    #self.matrix_init = tf.truncated_normal_initializer(stddev=0.01)
+    self.matrix_init = tf.constant_initializer(value=0.01)
     self.vector_init = tf.constant_initializer(value=0.0)
     self.tsallis = tsallis
     self.q = q
@@ -84,8 +84,8 @@ class Policy(object):
     cell = tf.contrib.rnn.LSTMCell(self.cell_input_dim,
                                    state_is_tuple=False,
                                    reuse=tf.get_variable_scope().reuse)
-    with tf.variable_scope('rnn', initializer=tf.truncated_normal_initializer(stddev=0.01)):
-    # with tf.variable_scope('rnn', initializer=tf.constant_initializer(value=0.001)):
+    #with tf.variable_scope('rnn', initializer=tf.truncated_normal_initializer(stddev=0.01)):
+    with tf.variable_scope('rnn', initializer=tf.constant_initializer(value=0.01)):
       cell = tf.contrib.rnn.OutputProjectionWrapper(
           cell, self.output_dim,
           reuse=tf.get_variable_scope().reuse)

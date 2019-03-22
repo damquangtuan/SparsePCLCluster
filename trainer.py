@@ -260,6 +260,9 @@ class Trainer(object):
     self.clip_norm = clip_norm
     self.clip_adv = clip_adv
     self.tau = float(tau)
+    
+    print("VALUE OF TAU --------------------------------", float(tau))
+
     self.tau_decay = tau_decay
     self.tau_start = tau_start
     self.eps_lambda = eps_lambda
@@ -553,7 +556,8 @@ class Trainer(object):
 
       model_step = sess.run(self.model.global_step)
 
-      reward_epi[step] = np.mean(greedy_episode_rewards)
+      #reward_epi[step] = np.mean(greedy_episode_rewards)
+      reward_epi[step] = np.mean(rewards)
       
       if is_chief==True and step % self.validation_frequency == 0:
         self.logging.info('at training step %d, model step %d: '
@@ -577,8 +581,6 @@ class Trainer(object):
       sv.saver.save(sess, sv.save_path, global_step=sv.global_step)
 
     save_data(reward_epi, self.file_to_save)
- 
-    #self.logging.set_verbosity(logging.INFO)
 
 def main(unused_argv):
   self.logging.set_verbosity(logging.INFO)

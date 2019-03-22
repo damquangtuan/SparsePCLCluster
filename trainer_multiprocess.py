@@ -26,7 +26,7 @@ import random
 #import pickle
 import datetime
 import time
-import multiprocessing
+from pathos.pools import ProcessPool
 import os
 
 
@@ -43,6 +43,8 @@ import replay_buffer
 import expert_paths
 import gym_wrapper
 import env_spec
+
+pool = ProcessPool(10)
 
 app = tf.app
 flags = tf.flags
@@ -157,7 +159,7 @@ flags.DEFINE_string('file_to_save', '', 'The file to save the rewards')
 
 
 
-class Trainer(object):
+class TrainerMulti(object):
   """Coordinates single or multi-replica training."""
 
   def __init__(
@@ -456,33 +458,6 @@ class Trainer(object):
   def do_before_step(self, step):
     pass
 
-  def run_multiprocess(self, iteration=0):
-    start_time = time.time()
-    time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime())
-    jobs = []
-
-    for i in range(10):
-        p = multiprocessing.Process(target=self.run, args=(iteration, i))
-        jobs.append(p)
-        p.start()
-        time.sleep(0.05)
-
-
-
-    keepWaiting = True
-    while keepWaiting:
-        time.sleep(1)
-        keepWaiting = False
-        for j in jobs:
-            if j.is_alive():
-                keepWaiting = True
-                break
-
-    # time.sleep(60)
-
-    print("--- %s seconds ---" % (time.time() - start_time))
-    print("done")
-    print(datetime.datetime.now())
 
   def run(self, iteration=0, iprocess=0):
     """Run training."""
@@ -613,10 +588,28 @@ class Trainer(object):
  
     #self.logging.set_verbosity(logging.INFO)
 
+def run_multiprocess(trainer_obj, iteration=0):
+    start_time = time.time()
+    time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime())
+    jobs = []
+
+    for i in range(10):
+        p = pool.apipe(trainer_obj.run, iteration, i)
+        time.sleep(0.05)
+        jobs.append(p)
+
+    # time.sleep(60)
+    for job in jobs:
+        job.get()
+
+    print("--- %s seconds ---" % (time.time() - start_time))
+    print("done")
+    print(datetime.datetime.now())
+
 def main(unused_argv):
-  self.logging.set_verbosity(logging.INFO)
-  trainer = Trainer()
-  trainer.run()
+    self.logging.set_verbosity(logging.INFO)
+    trainerMulti = TrainerMulti()
+    trainerMulti.run()
 
 
 def save_data(reward_epi, filename):

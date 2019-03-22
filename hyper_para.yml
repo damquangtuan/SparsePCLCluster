@@ -1,15 +1,17 @@
 # default document denoted by the name "DEFAULT"
 name: "DEFAULT"
-repetitions: 9
-iterations: 50
+repetitions: 5
+iterations: 4000
 path: "/work/scratch/qd34dado/generalTsallisv2"
 
 
 params:
     batch_size: 400
     learning_rate: 0.01
+    tau: 0.01
     q: 2.0
     k: 1.0
+
 
 ---
 # 1. experiment
